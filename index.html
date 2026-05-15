@@ -5,14 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>页面列表</title>
     <style>
-        .root{
+        #root{
             display: flex;
+            flex-wrap: wrap;
         }
         .page{
-            flex: 1;
             border: 1px black solid;
             border-radius: 5px;
             width: 300px;
+            margin: 10px;
+            /* background-color: lightgoldenrodyellow; */
+            box-shadow: 2px 2px 10px gray;
+        }
+        .page img{
+            display: block;
+            width: 100%;
+        }
+        .page :not(img){
+            padding: 10px;
+        }
+        .page a{
+            text-decoration: none;
+            background-color: gold;
+            color: white;
+            padding: 5px;
+            margin: 1px;
+            border-radius: 10px;
+            display: block;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
         }
     </style>
 </head>
@@ -22,6 +45,7 @@
         <div class="page">
             <img src="https://github.githubassets.com/assets/free-banner-3e29cb53cf72.png" alt="测试">
             <h2>测试</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, architecto doloremque exercitationem, labore aut officia et odio laudantium molestiae maiores obcaecati voluptates! Eos suscipit numquam sapiente esse, libero voluptatem ullam!</p>
             <a href="#">打开</a>
         </div>
         <div class="page">
